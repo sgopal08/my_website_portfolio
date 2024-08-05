@@ -1,0 +1,105 @@
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.welcome-container {
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+  padding: 20px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+@media (min-width: 768px) {
+  .profile-container {
+    flex-direction: row;
+    width: 65%;
+  }
+}
+
+.profile-pic-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .profile-pic-container {
+    margin-right: 25px;
+    margin-bottom: 0;
+  }
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  margin-bottom: 10px;
+}
+
+.profile-title {
+  font-weight: bold;
+  
+}
+
+.icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  color: #78a3dc;
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+.icon:hover {
+  color: #000000;
+}
+
+.profile-blurb {
+  font-size: 18px;
+  text-align: center;
+  margin-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .profile-blurb {
+    text-align: left;
+    max-width: 500px;
+  }
+}
+
+.profile-blurb p {
+  margin-bottom: 10px;
+}
