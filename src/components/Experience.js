@@ -35,6 +35,8 @@ const skills = [
   'JavaScript',
   'HTML/CSS',
   'React.js',
+  'Git',
+  'GitHub',
   'Figma',
   'Tableau',
   'R',
@@ -72,14 +74,14 @@ function Experience() {
         <div className="skills-list">
           <div className="skills-column">
             <ul>
-              {skills.slice(0, 6).map((skill, index) => (
+              {skills.slice(0, 7).map((skill, index) => (
                 <li key={index}>{skill}</li>
               ))}
             </ul>
           </div>
           <div className="skills-column">
             <ul>
-              {skills.slice(6).map((skill, index) => (
+              {skills.slice(7).map((skill, index) => (
                 <li key={index}>{skill}</li>
               ))}
             </ul>

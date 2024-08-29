@@ -1,0 +1,11 @@
+.footer {
+    background-color: #000000;
+    /* Match the background color with your theme */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
