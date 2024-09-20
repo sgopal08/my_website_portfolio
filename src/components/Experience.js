@@ -5,19 +5,19 @@ const experiences = [
   {
     title: 'App Team',
     role: 'iOS App Developer',
-    image: '/images/appteam.jpg',
+    image: 'build/images/appteam.jpg',
     description: '•Developing iOS app development tasks with Apple’s XCode using Swift/SwiftUI, enhancing technical and UI skills to acquire experience in professional software development.<br>•Collaborate with 20 team members within a simulated company setting to generate application ideas, provide peer feedback.'
   },
   {
     title: '1893 Brand Studio',
     role: 'Web Developer',
-    image: '/images/dth.png',
+    image: 'build/images/dth.png',
     description: '•Led collaborative efforts with local Chapel Hill businesses and individual clients to craft visually engaging website and digital marketing materials.<br>•Utilized website construction and prototyping platforms like Wordpress, Figma, and Elementor to streamline development processes, employing HTML and CSS for website creation.'
   },
   {
     title: 'HackNC',
     role: 'Jr. Marketing Director',
-    image: '/images/hacknc.jpeg',
+    image: 'build/images/hacknc.jpeg',
     description: '•Maintain and manage over 4 social media platforms to increase hackathon & workshop attendance, designing content through Canva.<br>•Actively engage in weekly team meetings to receive feedback and check-in on deliverables and event planning'
   },
   {
