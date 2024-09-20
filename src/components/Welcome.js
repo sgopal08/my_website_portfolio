@@ -10,7 +10,7 @@ function Welcome() {
       <TypingAnimation />
       <div className="profile-container">
         <div className="profile-pic-container">
-          <img src="/images/pfp_minipic.png" alt="Profile" className="profile-pic" />
+          <img src="my_website_portfolio/images/pfp_minipic.png" alt="Profile" className="profile-pic" />
           <p className="first-name">Sanjana</p>
           <p className="last-name">Gopalswamy</p>
           <div className="icons">
