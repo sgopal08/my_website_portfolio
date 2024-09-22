@@ -5,8 +5,8 @@ const experiences = [
     {
     title: 'UNC Department of Computer Science',
     role: 'Teaching Assistant',
-    image: '/my_website_portfolio/images/dfg.png',
-    description: '•Led a team of 6 designers to create a website to facilitate street garbage clean-ups in lower-income areas of Bangalore, India, ensuring alignment with client requirements and community needs.<br>•Facilitated user research and testing in Bangalore using UserTesting and Maze, enhancing wireframes based on user feedback and competitive analysis'
+    image: '/my_website_portfolio/images/unccs.png',
+    description: '•Selected from a pool of 150 applicants to mentor students in an introductory Python course, providing tailored support to 300+ students through one-on-one tutoring and in-lecture assistance. •Collaborate with 10 teaching assistants and 2 professors to develop lesson plans, hold office hours, and organize hackathons, enhancing course delivery and student engagement.'
   },
   {
     title: 'App Team',

@@ -31,6 +31,13 @@ const tiles = [
     description: 'High-fidelity design wireframes for a volunteer & crowd-sourcing platform for street garbage clean-ups in Bangalore, India.',
     link: 'https://www.figma.com/proto/Z66UHeU8UtBM8fbU3DSgu2/Energy-Policy-Institute-at-the-University-of-Chicago---India?node-id=1027-1382&node-type=CANVAS&t=glcQixQNHE72Dqpi-1&scaling=scale-down&content-scaling=fixed&page-id=6%3A4&starting-point-node-id=1027%3A1382&show-proto-sidebar=1',
   },
+    {
+    image: '/my_website_portfolio/images/logo.png',
+    title: 'Personal Portfolio',
+    software: 'JavaScript, HTML/CSS, React.js',
+    description: 'Personal Portfolio website platform where users can view my experiences, projects, and get in touch with me.',
+    link: 'https://github.com/sgopal08/my_website_portfolio',
+  },
   {
     image: '/my_website_portfolio/images/jungle.png',
     title: 'Jungle Dash',

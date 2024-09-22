@@ -27,6 +27,12 @@ function Welcome() {
           <p>I'm passionate about the world of technology, and am particularly drawn to the realms of software development, product management, and UX/UI design.</p>
         </div>
       </div>
+      {/* Resume Button */}
+      <div className="resume-button-container">
+        <a href="/my_website_portfolio/SanjanaGopalswamy_Fall2024.docx" download>
+          <button className="resume-button">Resume</button>
+        </a>
+      </div>
     </div>
   );
 }

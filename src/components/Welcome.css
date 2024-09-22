@@ -104,3 +104,24 @@ video {
 .profile-blurb p {
   margin-bottom: 10px;
 }
+
+.resume-button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.resume-button {
+  background-color: #78a3dc;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #396fb5;
+  /* Slightly darker blue on hover */
+}
