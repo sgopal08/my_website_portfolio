@@ -5,7 +5,7 @@ const experiences = [
   {
     title: 'App Team',
     role: 'iOS App Developer',
-    image: 'my_website_portfolio/images/appteam.jpg',
+    image: '/my_website_portfolio/images/appteam.jpg',
     description: '•Developing iOS app development tasks with Apple’s XCode using Swift/SwiftUI, enhancing technical and UI skills to acquire experience in professional software development.<br>•Collaborate with 20 team members within a simulated company setting to generate application ideas, provide peer feedback.'
   },
   {
@@ -17,13 +17,13 @@ const experiences = [
   {
     title: 'HackNC',
     role: 'Jr. Marketing Director',
-    image: 'my_website_portfolio/images/hacknc.jpeg',
+    image: '/my_website_portfolio/images/hacknc.jpeg',
     description: '•Maintain and manage over 4 social media platforms to increase hackathon & workshop attendance, designing content through Canva.<br>•Actively engage in weekly team meetings to receive feedback and check-in on deliverables and event planning'
   },
   {
     title: 'DevelopForGood',
     role: 'Design Manager',
-    image: 'my_website_portfolio/images/dfg.png',
+    image: '/my_website_portfolio/images/dfg.png',
     description: '•Led a team of 6 designers to create a website to facilitate street garbage clean-ups in lower-income areas of Bangalore, India, ensuring alignment with client requirements and community needs.<br>•Facilitated user research and testing in Bangalore using UserTesting and Maze, enhancing wireframes based on user feedback and competitive analysis'
   }
 ];
