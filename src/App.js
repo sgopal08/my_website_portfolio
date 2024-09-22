@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import Welcome from './components/Welcome';
+// import Welcome from './components/Welcome';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Welcome />
+      {/* <Welcome /> */}
       <Routes>
         <Route path='/' element={<Home />} />
       </Routes>
