@@ -2,6 +2,12 @@ import React from 'react';
 import './Experience.css';
 
 const experiences = [
+    {
+    title: 'UNC Department of Computer Science',
+    role: 'Teaching Assistant',
+    image: '/my_website_portfolio/images/dfg.png',
+    description: '•Led a team of 6 designers to create a website to facilitate street garbage clean-ups in lower-income areas of Bangalore, India, ensuring alignment with client requirements and community needs.<br>•Facilitated user research and testing in Bangalore using UserTesting and Maze, enhancing wireframes based on user feedback and competitive analysis'
+  },
   {
     title: 'App Team',
     role: 'iOS App Developer',
