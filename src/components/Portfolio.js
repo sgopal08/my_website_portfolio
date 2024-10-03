@@ -43,14 +43,14 @@ const tiles = [
     title: 'Jungle Dash',
     software: 'Java',
     description: 'A simple side-scroller game, inspired by the T-Rex game when you lose internet connection on Google Chrome.',
-    link: 'http://example.com/project-three',
+    link: 'https://github.com/sgopal08/JungleDash',
   },
   {
     image: '/my_website_portfolio/images/nytmini.png',
     title: 'NYT Mini App',
     software: 'Swift/Swift UI',
     description: 'Recreation of the New York Times Mini Crossword game.',
-    link: 'https://github.com/appteamcarolina/f23-academy-final-project-sgopal08',
+    link: 'https://github.com/sgopal08/nyt_mini',
   },
 ];
 
