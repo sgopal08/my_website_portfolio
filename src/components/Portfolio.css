@@ -149,3 +149,38 @@
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+
+.presentation-button {
+  background-color: #ffcc00;
+  /* Change the background color as needed */
+  color: black;
+  border: none;
+  padding: 7px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  /* Add some space above the button */
+  transition: background-color 0.3s ease;
+}
+
+.presentation-button:hover {
+  background-color: #cc9900;
+  /* Slightly darker yellow on hover */
+}
+
+.project-button {
+  background-color: #78a3dc;
+  color: black;
+  border: none;
+  padding: 7px 15px;
+  font-size: 10;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #396fb5;
+}

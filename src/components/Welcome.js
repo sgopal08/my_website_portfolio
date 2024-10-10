@@ -23,16 +23,18 @@ function Welcome() {
           </div>
         </div>
         <div className="profile-blurb">
-          <p>Hi, I'm Sanjana. I'm a second-year undergraduate student at UNC Chapel Hill studying computer science and advertising & PR. I aspire to excel in the intersection of technology and marketing.</p>
-          <p>I'm passionate about the world of technology, and am particularly drawn to the realms of software development, product management, and UX/UI design.</p>
+          <p>Hi, I’m Sanjana! I’m an undergraduate at UNC Chapel Hill, double majoring in computer science and advertising/PR. I’m passionate about the intersection of technology and marketing, particularly interested in software engineering, product management, and UX/UI design.</p>
+          <p>Creativity is at the heart of everything I do, whether I’m painting landscapes or coding a mobile app game. I’m also passionate about teaching, working as teaching assistant for the CS department and even a dance instructor for four years!</p>
+          <p>Outside of school, I love horror movies, R&B music, and exploring new cuisines. Take a look at my work and experiences below!</p>
         </div>
       </div>
       {/* Resume Button */}
-      <div className="resume-button-container">
-        <a href="/my_website_portfolio/SanjanaGopalswamy_Fall2024.docx" download>
-          <button className="resume-button">Resume</button>
-        </a>
-      </div>
+<div className="resume-button-container">
+  <a href="https://docs.google.com/document/d/1sHww-pjzJFa20tqkW8Y7QlqIKc_9Auy-qyi8sVZBJEU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+    <button className="resume-button">Resume</button>
+  </a>
+</div>
+
     </div>
   );
 }

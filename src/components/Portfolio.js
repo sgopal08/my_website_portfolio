@@ -23,6 +23,7 @@ const tiles = [
     software: 'Swift/SwiftUI',
     description: 'UNC Chapel Hill-based roommate matching app.',
     link: 'https://github.com/caitlinestrada27/heelhouse',
+    presentationLink: 'https://devpost.com/software/heel-house', 
   },
   {
     image: '/my_website_portfolio/images/epic.jpeg',
@@ -30,8 +31,9 @@ const tiles = [
     software: 'Figma, UserTesting',
     description: 'High-fidelity design wireframes for a volunteer & crowd-sourcing platform for street garbage clean-ups in Bangalore, India.',
     link: 'https://www.figma.com/proto/Z66UHeU8UtBM8fbU3DSgu2/Energy-Policy-Institute-at-the-University-of-Chicago---India?node-id=1027-1382&node-type=CANVAS&t=glcQixQNHE72Dqpi-1&scaling=scale-down&content-scaling=fixed&page-id=6%3A4&starting-point-node-id=1027%3A1382&show-proto-sidebar=1',
+    presentationLink: 'https://docs.google.com/presentation/d/1_RqGRpBQ1FqGgb0cn5hHbGl-rbhbZMkCk5zSlrnWoXg/edit?usp=sharing', 
   },
-    {
+  {
     image: '/my_website_portfolio/images/logo.png',
     title: 'Personal Portfolio',
     software: 'JavaScript, HTML/CSS, React.js',
@@ -58,7 +60,7 @@ function Portfolio() {
   return (
     <div className="portfolio-container">
       <h2 className="portfolio-title">My Portfolio...</h2>
-        <h3 className="portfolio-subtitle">Projects</h3>
+      <h3 className="portfolio-subtitle">Projects</h3>
       <div className="portfolio-tiles">
         {tiles.map((tile, index) => (
           <div className="portfolio-tile" key={index}>
@@ -72,8 +74,19 @@ function Portfolio() {
             <div className="portfolio-tile-description">
               <p>{tile.description}</p>
               <a href={tile.link} target="_blank" rel="noopener noreferrer">
-                <button>View Project</button>
+                <button className="project-button">View Project</button>
               </a>
+              {/* Conditionally render the View Presentation button for Rubbish Economics */}
+              {tile.title === 'Rubbish Economics' && (
+                <a href={tile.presentationLink} target="_blank" rel="noopener noreferrer">
+                  <button className="presentation-button">View Presentation</button>
+                </a>
+              )}
+              {tile.title === 'Heel House' && (
+                <a href={tile.presentationLink} target="_blank" rel="noopener noreferrer">
+                  <button className="presentation-button">View Presentation</button>
+                </a>
+              )}
             </div>
           </div>
         ))}
