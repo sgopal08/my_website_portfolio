@@ -30,16 +30,13 @@ video {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   margin-top: 20px;
   width: 90%;
-  /* Increase the width to fill more of the screen */
   max-width: 1000px;
-  /* Larger max-width to scale on bigger screens */
 }
 
 @media (min-width: 768px) {
   .profile-container {
     flex-direction: row;
     width: 75%;
-    /* Reduce space on larger screens */
   }
 }
 
@@ -59,7 +56,6 @@ video {
 
 .profile-pic {
   width: 180px;
-  /* Increase the size of the profile picture */
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
@@ -68,18 +64,16 @@ video {
 
 .profile-name {
   font-size: 24px;
-  /* Larger text for name */
   margin-bottom: 10px;
 }
 
 .profile-title {
   font-weight: bold;
   font-size: 20px;
-  /* Larger font for title */
 }
 
 .icons {
-  margin-top: 15px;
+  margin-top: 30px; /* Increased space between the text and icons */
   display: flex;
   justify-content: center;
 }
@@ -87,7 +81,6 @@ video {
 .icon {
   color: #78a3dc;
   font-size: 35px;
-  /* Make icons bigger */
   margin: 0 15px;
 }
 
@@ -97,17 +90,17 @@ video {
 
 .profile-blurb {
   font-size: 20px;
-  /* Larger font size for the blurb */
   text-align: center;
   margin-left: 15px;
   max-width: 600px;
-  /* Allow the blurb to expand more */
+  margin-top: 25px; /* Added space between the image and text */
 }
 
 @media (min-width: 768px) {
   .profile-blurb {
     text-align: left;
     max-width: 600px;
+    margin-top: 0; /* Keep spacing on larger screens */
   }
 }
 

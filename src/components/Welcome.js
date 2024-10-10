@@ -23,8 +23,8 @@ function Welcome() {
           </div>
         </div>
         <div className="profile-blurb">
-          <p>Hi, I’m Sanjana! I’m an undergraduate at UNC Chapel Hill, double majoring in computer science and advertising/PR. I’m passionate about the intersection of technology and marketing, particularly interested in software engineering, product management, and UX/UI design.</p>
-          <p>Creativity is at the heart of everything I do, whether I’m painting landscapes or coding a mobile app game. I’m also passionate about teaching, working as teaching assistant for the CS department and even a dance instructor for four years!</p>
+          <p>Hi, I’m Sanjana! I’m an undergraduate student at UNC Chapel Hill, double majoring in computer science and advertising/PR. I aspire to excel at the intersection of technology and marketing, and am particularly interested in software engineering, product management, and UX/UI design.</p>
+          <p>Creativity is at the heart of everything I do– whether I’m painting landscapes or coding a mobile app game. I'm also dedicated to teaching, both as a teaching assistant for the UNC CS department and as an assistant Kathak dance teacher for over 4 years.</p>
           <p>Outside of school, I love horror movies, R&B music, and exploring new cuisines. Take a look at my work and experiences below!</p>
         </div>
       </div>
