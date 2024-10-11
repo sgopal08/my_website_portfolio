@@ -3,6 +3,9 @@
 
 Over the summer, I taught myself how to use the React.js framework and learned basics of JavaScript, HTML, and CSS. I created a responsive personal portfolio website to showcase my professional/exctracurricular experiences and projects.
 
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/35417dc6-1e03-4222-be17-fb8ae253cad9">
+
+
 ### Key Features
 
 **1) Dynamic Screen View**
@@ -67,5 +70,7 @@ const handleSubmit = (e) => {
     });
 };
 ```
+
+
 
 
