@@ -54,6 +54,15 @@ const tiles = [
     description: 'Recreation of the New York Times Mini Crossword game.',
     link: 'https://github.com/sgopal08/nyt_mini',
   },
+  {
+    image: '/my_website_portfolio/images/totspot.png',
+    title: 'Tot Spot',
+    software: 'JavaScript (Next), HTML, CSS',
+    description: 'A website to helps working mothers find affordable, reliable childcare with personalized options, prices, and ratings.',
+    link: 'https://github.com/nehab444/fidhacks',
+    presentationLink: 'https://devpost.com/software/tot-spot'
+  },
+  
 ];
 
 function Portfolio() {
@@ -83,6 +92,11 @@ function Portfolio() {
                 </a>
               )}
               {tile.title === 'Heel House' && (
+                <a href={tile.presentationLink} target="_blank" rel="noopener noreferrer">
+                  <button className="presentation-button">View Presentation</button>
+                </a>
+              )}
+               {tile.title === 'Tot Spot' && (
                 <a href={tile.presentationLink} target="_blank" rel="noopener noreferrer">
                   <button className="presentation-button">View Presentation</button>
                 </a>

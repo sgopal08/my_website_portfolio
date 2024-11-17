@@ -28,34 +28,29 @@ const experiences = [
   },
   {
     title: 'DevelopForGood',
-    role: 'Design Manager',
+    role: 'Product Manager',
     image: '/my_website_portfolio/images/dfg.png',
     description: '•Led a team of 6 designers to create a website to facilitate street garbage clean-ups in lower-income areas of Bangalore, India, ensuring alignment with client requirements and community needs.<br>•Facilitated user research and testing in Bangalore using UserTesting and Maze, enhancing wireframes based on user feedback and competitive analysis'
   }
 ];
 
-const skills = [
-  'Java',
-  'Swift/SwiftUI',
-  'Python',
-  'JavaScript',
-  'HTML/CSS',
-  'React.js',
-  'Git',
-  'GitHub',
-  'Figma',
-  'Tableau',
-  'R',
-  'Microsoft Excel',
-  'Adobe Photoshop & Illustrator',
-  'Canva'
+const skillsWithImages = [
+  { name: 'Python', image: '/my_website_portfolio/images/python.png' },
+  { name: 'Java', image: '/my_website_portfolio/images/java.png' },
+  { name: 'JavaScript', image: '/my_website_portfolio/images/javascript.png' },
+  { name: 'HTML', image: '/my_website_portfolio/images/html.jpg' },
+  { name: 'CSS', image: '/my_website_portfolio/images/css.svg' },
+  { name: 'TypeScript', image: '/my_website_portfolio/images/typescript.png' },
+  { name: 'Swift', image: '/my_website_portfolio/images/swift.png' },
+  { name: 'React.js', image: '/my_website_portfolio/images/reactjs.png' },
+  { name: 'C', image: '/my_website_portfolio/images/clang.png' }
 ];
 
 function Experience() {
   return (
     <div className="experience-container">
       <div className="experience-title">
-        <h2 className="experience-title">Experiences</h2>
+        <h2>Experiences</h2>
       </div>
       <div className="experience-grid">
         {experiences.map((experience, index) => (
@@ -74,24 +69,15 @@ function Experience() {
           </div>
         ))}
       </div>
-      <div className="skills-container">
-        <h2 className="skills-title">Skills</h2>
-        <h3 className="skills-subtitle">Software, Languages, and Frameworks</h3>
-        <div className="skills-list">
-          <div className="skills-column">
-            <ul>
-              {skills.slice(0, 7).map((skill, index) => (
-                <li key={index}>{skill}</li>
-              ))}
-            </ul>
-          </div>
-          <div className="skills-column">
-            <ul>
-              {skills.slice(7).map((skill, index) => (
-                <li key={index}>{skill}</li>
-              ))}
-            </ul>
-          </div>
+      <div className="skills-gallery">
+        <h2 className="skills-gallery-title">Technical Skills</h2>
+        <div className="skills-gallery-grid">
+          {skillsWithImages.map((skill, index) => (
+            <div key={index} className="skill-item">
+              <img src={skill.image} alt={skill.name} className="skill-image" />
+              <p className="skill-name">{skill.name}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

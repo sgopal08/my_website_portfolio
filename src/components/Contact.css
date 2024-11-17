@@ -1,11 +1,12 @@
 .contact-container {
     padding: 100px 20px;
-    background-color: #f8f8f8;
+    background-color: #000000;
     text-align: center;
 }
 
 .contact-title {
     font-size: 36px;
+    color: #ffffff;    
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -13,7 +14,7 @@
 .contact-subtitle {
     font-size: 24px;
     margin-bottom: 40px;
-    color: #555;
+    color: #ffffff;
 }
 
 .contact-form {
