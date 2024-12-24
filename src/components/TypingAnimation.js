@@ -4,25 +4,25 @@ import './TypingAnimation.css';
 const TypingAnimation = () => {
   useEffect(() => {
     const messageContainer = document.getElementById('typed-message');
-    const message = 'Welcome! Take a look around...';
+    const message = "Hi! I'm Sanjana Gopalswamy. Take a look around...";
     let index = 0;
     let prevCursor = null;
 
     const typeLetter = () => {
       if (index < message.length) {
         if (prevCursor !== null) {
-          prevCursor.remove(); // Remove previous cursor
+          prevCursor.remove(); 
         }
         const newLetter = document.createElement('span');
         newLetter.textContent = message[index];
-        newLetter.classList.add('bold'); // Add bold styling
+        newLetter.classList.add('bold'); 
         const newCursor = document.createElement('span');
         newCursor.classList.add('cursor');
-        messageContainer.appendChild(newLetter); // Add new letter
-        messageContainer.appendChild(newCursor); // Add new cursor
-        prevCursor = newCursor; // Update previous cursor
+        messageContainer.appendChild(newLetter); 
+        messageContainer.appendChild(newCursor); 
+        prevCursor = newCursor; 
         index++;
-        setTimeout(typeLetter, 100); // Adjust speed here (100ms = 0.1 seconds)
+        setTimeout(typeLetter, 100); // for speed --> 100ms = 0.1 seconds
       }
     };
 

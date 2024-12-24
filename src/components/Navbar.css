@@ -38,11 +38,11 @@
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
+  grid-gap: 50px;
   list-style: none;
   text-align: center;
   width: 60vw;
-  justify-content: end;
+  justify-content: center;
   margin-right: 2rem;
 }
 

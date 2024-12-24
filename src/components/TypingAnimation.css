@@ -1,25 +1,22 @@
-/* Styling to simulate typing animation */
 #typed-message {
-  overflow: hidden; /* Hide overflow content */
-  white-space: nowrap; /* Prevent line breaks */
-  font-family: Avenir, sans-serif; /* Set font to Avenir */
-  font-size: 35px; /* Set font size to 35 */
+  overflow: hidden; 
+  white-space: nowrap; 
+  font-family: Avenir, sans-serif; 
+  font-size: 35px; 
 }
 
-/* Blinking cursor animation */
+/* for blinking effect */
 @keyframes blink {
   50% {
     border-color: transparent;
   }
 }
 
-/* Styling for the cursor */
 .cursor {
-  border-right: 0.15em solid #78a3dc; /* Dark blue blinking cursor effect */
+  border-right: 0.15em solid #78a3dc; 
   animation: blink 1s step-end infinite;
 }
 
-/* Styling for bold text */
 .bold {
   font-weight: bold;
 }
