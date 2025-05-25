@@ -2,6 +2,12 @@ import React from 'react';
 import './Experience.css';
 
 const experiences = [
+      {
+    title: 'SAS Data & AI Solutions',
+    role: 'Software Engineer Intern',
+    image: '/my_website_portfolio/images/sas.png',
+    description: 'Joining the Interactive Experiences team for summer 2025.'
+  },
     {
     title: 'UNC Department of Computer Science',
     role: 'Teaching Assistant',
