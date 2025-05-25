@@ -34,7 +34,7 @@ function Welcome() {
       </div>
       {/* add resume bttn here */}
 <div className="resume-button-container">
-  <a href="https://docs.google.com/document/d/1sHww-pjzJFa20tqkW8Y7QlqIKc_9Auy-qyi8sVZBJEU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+  <a href="https://docs.google.com/document/d/1P_rlOgeJnUqdX79TlVuCGXduqcwCxd7AYAICd3fAuxU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
     <button className="resume-button">Resume</button>
   </a>
 </div>

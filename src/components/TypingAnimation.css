@@ -2,7 +2,8 @@
   overflow: hidden; 
   white-space: nowrap; 
   font-family: Avenir, sans-serif; 
-  font-size: 35px; 
+  font-size: 50px; 
+  margin-top: 40px;
 }
 
 /* for blinking effect */

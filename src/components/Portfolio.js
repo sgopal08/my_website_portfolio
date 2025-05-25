@@ -75,8 +75,9 @@ const tiles = [
 function Portfolio() {
   return (
     <div className="portfolio-container">
-      <h2 className="portfolio-title">My Portfolio...</h2>
-      <h3 className="portfolio-subtitle">Projects</h3>
+      <div className="portfolio-title">
+        <h2>Projects</h2>
+      </div>
       <div className="portfolio-tiles">
         {tiles.map((tile, index) => (
           <div className="portfolio-tile" key={index}>
@@ -112,15 +113,15 @@ function Portfolio() {
           </div>
         ))}
       </div>
-      <h3 className="portfolio-subtitle">Social Media Graphics & Logos</h3>
-      {/* add image carousel here */}
-      <Carousel showArrows={true} infiniteLoop={true} showThumbs={false}>
+      {/* <h3 className="portfolio-subtitle">Social Media Graphics & Logos</h3> */}
+      {/*  image carousel here */}
+      {/* <Carousel showArrows={true} infiniteLoop={true} showThumbs={false}>
         {images.map((image, index) => (
           <div key={index}>
             <img src={image} alt={`Portfolio ${index + 1}`} />
           </div>
         ))}
-      </Carousel>
+      </Carousel> */}
     </div>
   );
 }

@@ -28,7 +28,9 @@ function Contact() {
 
   return (
     <div className="contact-container">
-      <h1 className="contact-title">Contact Me</h1>
+      <div className="contact-title">
+        <h2 >Contact Me</h2>
+      </div>
       <p className="contact-subtitle">I'd love to hear from you!</p>
 
       {/* Conditionally render form or thank-you message */}

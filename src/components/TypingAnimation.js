@@ -4,7 +4,7 @@ import './TypingAnimation.css';
 const TypingAnimation = () => {
   useEffect(() => {
     const messageContainer = document.getElementById('typed-message');
-    const message = "Hi! I'm Sanjana Gopalswamy. Take a look around...";
+    const message = "Welcome!";
     let index = 0;
     let prevCursor = null;
 
