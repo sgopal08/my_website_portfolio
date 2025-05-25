@@ -1,20 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './TypingAnimation.css';
 
-const TypingAnimation = () => {
+const TypingAnimation = ( {text = "Hello, world!", fontSize = "50px"} ) => {
+  const containerRef = useRef(null);
   useEffect(() => {
-    const messageContainer = document.getElementById('typed-message');
-    const message = "Welcome!";
+    const messageContainer = containerRef.current;
+    if(!messageContainer) return;
+
+    messageContainer.innerHTML = "";
+
     let index = 0;
     let prevCursor = null;
 
     const typeLetter = () => {
-      if (index < message.length) {
+      if (index < text.length) {
         if (prevCursor !== null) {
           prevCursor.remove(); 
         }
         const newLetter = document.createElement('span');
-        newLetter.textContent = message[index];
+        newLetter.textContent = text[index];
         newLetter.classList.add('bold'); 
         const newCursor = document.createElement('span');
         newCursor.classList.add('cursor');
@@ -27,9 +31,9 @@ const TypingAnimation = () => {
     };
 
     typeLetter();
-  }, []);
+  }, [text]);
 
-  return <div id="typed-message"></div>;
+  return <div ref={containerRef} id="typed-message" style={{fontSize: fontSize}}></div>;
 };
 
 export default TypingAnimation;

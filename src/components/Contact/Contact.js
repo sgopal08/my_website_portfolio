@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import TypingAnimation from '../TypingAnimation/TypingAnimation';
 
 function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -29,7 +30,7 @@ function Contact() {
   return (
     <div className="contact-container">
       <div className="contact-title">
-        <h2 >Contact Me</h2>
+        <TypingAnimation text="Contact Me"/>
       </div>
       <p className="contact-subtitle">I'd love to hear from you!</p>
 

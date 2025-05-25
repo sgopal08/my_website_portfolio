@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
 import './Portfolio.css';
+import TypingAnimation from '../TypingAnimation/TypingAnimation';
 
 const images = [
   '/my_website_portfolio/images/post1.webp',
@@ -76,7 +77,7 @@ function Portfolio() {
   return (
     <div className="portfolio-container">
       <div className="portfolio-title">
-        <h2>Projects</h2>
+        <TypingAnimation text="Projects"/>
       </div>
       <div className="portfolio-tiles">
         {tiles.map((tile, index) => (

@@ -1,19 +1,23 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
-import Welcome from './components/Welcome';
-import Experience from './components/Experience';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar/Navbar';
+import Welcome from './components/Welcome/Welcome';
+import About from './components/About/About';
+import Experience from './components/Experience/Experience';
+import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import { HashRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <div id="home">
+        <Welcome/>
+      </div>
       <div id="about">
-        <Welcome />
+        <About />
       </div>
       <div id="experience">
         <Experience />

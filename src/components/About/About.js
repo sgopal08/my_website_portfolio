@@ -1,18 +1,14 @@
 import React from 'react';
-import '../App.css';
-import './Welcome.css';
-import TypingAnimation from './TypingAnimation';
+import '../../App.css';
+import './About.css';
+import TypingAnimation from '../TypingAnimation/TypingAnimation';
 
-function Welcome() {
+function About() {
   return (
     <div className="welcome-container">
+      <TypingAnimation text="About Me"></TypingAnimation>
       {/* <video src="/my_website_portfolio/videos/video-4.mp4" autoPlay loop muted /> */}
-      <TypingAnimation />
       <div className="profile-container">
-        <div className="profile-pic-container">
-          <img src="/my_website_portfolio/images/pfp_minipic.png" alt="Profile" className="profile-pic" />
-          {/* <p className="first-name">Sanjana</p>
-          <p className="last-name">Gopalswamy</p> */}
           <p className="profile-title">Connect with me!</p>
           <div className="icons">
             <a href="https://www.linkedin.com/in/sanjana-gopalswamy-029887296/" target="_blank" rel="noopener noreferrer" className="icon">
@@ -25,7 +21,6 @@ function Welcome() {
               <i className="fas fa-envelope" />
             </a>
           </div>
-        </div>
         <div className="profile-blurb">
           <p>Hi, I’m Sanjana! I’m an undergraduate student at UNC Chapel Hill, double majoring in computer science and advertising/PR. I aspire to excel at the intersection of technology and marketing, and am particularly interested in front-end software engineering and product management.</p>
           <p>Creativity is at the heart of everything I do– whether I’m painting landscapes or making a mobile app game. I'm also dedicated to teaching, both as a new teaching assistant for the UNC CS department and as an assistant dance teacher for over 4 years.</p>
@@ -43,4 +38,4 @@ function Welcome() {
   );
 }
 
-export default Welcome;
+export default About;

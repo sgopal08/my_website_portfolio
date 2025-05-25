@@ -9,8 +9,11 @@ import Footer from '../Footer';
 function Home() {
   return (
     <>
-      <div id="about">
+      <div id="home">
         <Welcome />
+      </div>
+      <div>
+        <About/>
       </div>
       <div id="experience">
         <Experience />

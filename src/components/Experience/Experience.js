@@ -1,5 +1,6 @@
 import React from 'react';
 import './Experience.css';
+import TypingAnimation from '../TypingAnimation/TypingAnimation';
 
 const experiences = [
       {
@@ -56,7 +57,7 @@ function Experience() {
   return (
     <div className="experience-container">
       <div className="experience-title">
-        <h2>Experiences</h2>
+        <TypingAnimation text="Experiences"/>
       </div>
       <div className="experience-grid">
         {experiences.map((experience, index) => (
