@@ -16,11 +16,85 @@
   color: white;
 }
 
-.experience-grid {
+.experience-stack {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; /* Space between tiles */
+  flex-direction: column;
+  gap: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.experience-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  gap: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-logo img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.experience-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-company {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.experience-role {
+  margin-bottom: 10px;
+}
+
+.role-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.role-duration {
+  font-style: italic;
+  color: #555;
+  font-size: 14px;
+}
+
+.role-description {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .experience-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .experience-logo img {
+    margin-bottom: 10px;
+  }
+
+  .experience-content {
+    align-items: center;
+  }
+}
+
+.profile-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: -10px;
+  margin-top: 30px;
 }
 
 .experience-item {
@@ -100,6 +174,13 @@
   flex-direction: column;
 }
 
+.leadership{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .skills-container {
   width: 76%;
   background-color: #fff;
@@ -109,35 +190,6 @@
   text-align: center;
 }
 
-.skills-title {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-
-.skills-subtitle {
-  font-size: 20px;
-  margin-bottom: 25px;
-  font-weight: unset;
-  color: #78a3dc
-}
-
-.skills-list {
-  display: flex;
-  font-size: 20px;
-  justify-content: center;
-  gap: 40px;
-}
-
-.skills-column {
-  flex: 1;
-}
-
-.skills-column ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  text-align: left;
-}
 
 /* Skills Gallery */
 .skills-gallery {
@@ -148,6 +200,14 @@
 .skills-gallery-title {
   font-size: 28px;
   font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.subtitle{
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 40px;
   margin-bottom: 20px;
   color: white;
 }
