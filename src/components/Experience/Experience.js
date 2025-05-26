@@ -75,7 +75,7 @@ const experiences = [
       {
         role: 'Web Developer',
         duration: 'January 2023 - January 2024',
-        description: '•Led collaborative efforts with local Chapel Hill businesses and individual clients to craft visually engaging website and digital marketing materials.<br>• Utilized website construction and prototyping platforms like Wordpress, Figma, and Elementor to streamline development processes, employing HTML and CSS for website creation.'
+        description: '• Led collaborative efforts with local Chapel Hill businesses and individual clients to craft visually engaging website and digital marketing materials.<br>• Utilized website construction and prototyping platforms like Wordpress, Figma, and Elementor to streamline development processes, employing HTML and CSS for website creation.'
       }
     ]
   },

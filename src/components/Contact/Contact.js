@@ -31,10 +31,19 @@ function Contact() {
     <div className="contact-container">
       <div className="contact-title">
         <TypingAnimation text="Contact Me"/>
+        <div className="icons">
+          <a href="https://www.linkedin.com/in/sanjana-gopalswamy-029887296/" target="_blank" rel="noopener noreferrer" className="icon">
+            <i className="fab fa-linkedin" />
+          </a>
+          <a href="https://github.com/sgopal08" target="_blank" rel="noopener noreferrer" className="icon">
+            <i className="fab fa-github" />
+          </a>
+            <a href="mailto:sgopal0809@gmail.com"  className="icon">
+            <i className="fas fa-envelope" />
+          </a>
+        </div>
       </div>
       <p className="contact-subtitle">I'd love to hear from you!</p>
-
-      {/* Conditionally render form or thank-you message */}
       {isSubmitted ? (
         <p className="thank-you-message">Thank you for contacting me, I will get back to you soon!.</p>
       ) : (
