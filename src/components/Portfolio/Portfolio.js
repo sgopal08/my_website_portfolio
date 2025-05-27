@@ -19,7 +19,7 @@ const images = [
 
 const tiles = [
     {
-    image: '/my_website_portfolio/images/bytenotes.png',
+    image: '/my_website_portfolio/images/ByteNotes.png',
     title: 'Byte Notes',
     software: 'Next.js (TypeScript), Tailwind CSS, Supabase',
     description: 'Byte Notes is a note-taking platform for Computer Science students, featuring a markdown text editor and built-in code compiler. Users can organize notes by notebooks, chapters, and pages, and share and publish them for other users. ',
