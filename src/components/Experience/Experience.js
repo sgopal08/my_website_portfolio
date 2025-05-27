@@ -32,7 +32,7 @@ const experiences = [
       {
         role: 'Team Lead',
         duration: 'May 2025 - Present',
-        description: '• Leading development for a student-led start up for financial tracker app built through Swift, optimizing user retention and engagement.'
+        description: '• Leading development for a student-led financial tracker app built through Swift, optimizing user retention and engagement.'
       },
       {
         role: 'Product Manager',

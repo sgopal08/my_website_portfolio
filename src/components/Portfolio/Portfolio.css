@@ -58,7 +58,6 @@
 .portfolio-tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  /* 2 cards per row on large screens */
   gap: 30px;
   padding: 0 20px;
   width: 100%;
@@ -73,6 +72,12 @@
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-details {
@@ -153,7 +158,7 @@
 }
 
 .presentation-button {
-  background-color: #ffcc00;
+  background-color: #78a3dc;
   color: black;
   border: none;
   padding: 7px 15px;
@@ -165,12 +170,12 @@
 }
 
 .presentation-button:hover {
-  background-color: #cc9900;
+  background-color: #b6cfef;
 }
 
 .project-button {
-  background-color: #78a3dc;
-  color: black;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 7px 15px;
   font-size: 10;
@@ -181,5 +186,6 @@
 }
 
 .project-button:hover {
-  background-color: #396fb5;
+  background-color: #a9a9a9;
+  color:rgb(0, 0, 0);
 }

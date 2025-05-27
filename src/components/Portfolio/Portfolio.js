@@ -42,8 +42,8 @@ const tiles = [
   {
     image: '/my_website_portfolio/images/epic.jpeg',
     title: 'Rubbish Economics',
-    software: 'Figma, User Testing',
-    description: 'High-fidelity design wireframes for a volunteer & crowd-sourcing platform for street garbage clean-ups in Bangalore, India.',
+    software: 'Figma, UserTesting',
+    description: 'High-fidelity design wireframes for a volunteer, crowd-sourcing, and community forum platform to motivate street garbage clean-ups in Bangalore, India. Users can sign-up for neighborhood cleans ups, donate directly to the cause to fund equipment & volunteer needs, and share progress via a community forum.',
     link: 'https://www.figma.com/proto/Z66UHeU8UtBM8fbU3DSgu2/Energy-Policy-Institute-at-the-University-of-Chicago---India?node-id=1027-1382&node-type=CANVAS&t=glcQixQNHE72Dqpi-1&scaling=scale-down&content-scaling=fixed&page-id=6%3A4&starting-point-node-id=1027%3A1382&show-proto-sidebar=1',
     presentationLink: 'https://docs.google.com/presentation/d/1_RqGRpBQ1FqGgb0cn5hHbGl-rbhbZMkCk5zSlrnWoXg/edit?usp=sharing', 
   },
