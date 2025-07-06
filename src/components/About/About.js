@@ -10,7 +10,7 @@ function About() {
       {/* <video src="/my_website_portfolio/videos/video-4.mp4" autoPlay loop muted /> */}
           {/* <p className="profile-title">Connect with me!</p>
           <div className="icons">
-            <a href="https://www.linkedin.com/in/sanjana-gopalswamy-029887296/" target="_blank" rel="noopener noreferrer" className="icon">
+             <a href="https://www.linkedin.com/in/sanjana-gopalswamy-029887296/" target="_blank" rel="noopener noreferrer" className="icon">
               <i className="fab fa-linkedin" />
             </a>
             <a href="https://github.com/sgopal08" target="_blank" rel="noopener noreferrer" className="icon">
@@ -26,11 +26,11 @@ function About() {
           <p>Outside of school, I love horror movies, R&B music, and exploring new cuisines. Take a look at my work and experiences below!</p>
         </div>
       {/* add resume bttn here */}
-<div className="resume-button-container">
+{/* <div className="resume-button-container">
   <a href="https://docs.google.com/document/d/1P_rlOgeJnUqdX79TlVuCGXduqcwCxd7AYAICd3fAuxU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
     <button className="resume-button">Resume</button>
   </a>
-</div>
+</div> */}
 
     </div>
   );

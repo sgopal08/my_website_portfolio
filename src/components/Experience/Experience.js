@@ -1,4 +1,3 @@
-import React from 'react';
 import './Experience.css';
 import TypingAnimation from '../TypingAnimation/TypingAnimation';
 
@@ -106,18 +105,6 @@ const leadership = [
   },
 ]
 
-const skillsWithImages = [
-  { name: 'Python', image: '/my_website_portfolio/images/python.png' },
-  { name: 'Java', image: '/my_website_portfolio/images/java.png' },
-  { name: 'JavaScript', image: '/my_website_portfolio/images/javascript.png' },
-  { name: 'HTML', image: '/my_website_portfolio/images/html.jpg' },
-  { name: 'CSS', image: '/my_website_portfolio/images/css.svg' },
-  { name: 'TypeScript', image: '/my_website_portfolio/images/typescript.png' },
-  { name: 'Swift', image: '/my_website_portfolio/images/swift.png' },
-  { name: 'React.js', image: '/my_website_portfolio/images/reactjs.png' },
-  { name: 'C', image: '/my_website_portfolio/images/clang.png' }
-];
-
 function Experience() {
   return (
     <div className="experience-container">
@@ -168,17 +155,6 @@ function Experience() {
                   </div>
                 ))}
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="skills-gallery">
-        <h2 className="subtitle">Technical Skills</h2>
-        <div className="skills-gallery-grid">
-          {skillsWithImages.map((skill, index) => (
-            <div key={index} className="skill-item">
-              <img src={skill.image} alt={skill.name} className="skill-image" />
-              <p className="skill-name">{skill.name}</p>
             </div>
           ))}
         </div>

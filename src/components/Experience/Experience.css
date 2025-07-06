@@ -187,74 +187,10 @@
   flex-direction: column;
 }
 
-.skills-container {
-  width: 76%;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  margin-top: 40px;
-  text-align: center;
-}
-
-
-/* Skills Gallery */
-.skills-gallery {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.skills-gallery-title {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: white;
-}
-
-.subtitle{
+.subtitle {
   font-size: 28px;
   font-weight: bold;
   margin-top: 40px;
   margin-bottom: 20px;
   color: white;
-}
-
-.skills-gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  /* Adjust tile size */
-  height: 140px;
-  background-color: #f5f5f5;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.skill-image {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-.skill-name {
-  font-size: 14px;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
 }

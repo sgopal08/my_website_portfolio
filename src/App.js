@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Welcome from './components/Welcome/Welcome';
 import About from './components/About/About';
 import Experience from './components/Experience/Experience';
+import Skills from './components/Skills/Skills';
 import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
@@ -21,6 +22,9 @@ function App() {
       </div>
       <div id="experience">
         <Experience />
+      </div>
+      <div id="skills">
+        <Skills />
       </div>
       <div id="portfolio">
         <Portfolio />
