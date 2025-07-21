@@ -9,7 +9,7 @@ const experiences = [
       {
         role: 'Software Engineer Intern',
         duration: 'Summer 2025',
-        description: '• Joining the Interactive Experiences Solutions Engineering team for summer 2025.'
+        description: '• Engineer new gameplay for a branded game using Next & Phaser frameworks for front end and Prisma for database storage to attract consumers at SAS conferences <br> • Collaborating with a 9-person Agile team in weekly sprints, scrums, & code reviews to deliver 7 new features and resolve 5 bugs <br> • Created internal dev scripts and led Jira sprint planning, to streamline pre-commit checks and improve developer efficiency'
       }
     ]
   },
@@ -99,7 +99,7 @@ const leadership = [
       {
         role: 'Assistant Dance Teacher',
         duration: 'August 2020 - August 2023',
-        description: '•	Mentored students ages 10-13 in Indian classical Kathak dance, leading 2-hour weekly classes, establishing solid technique and performance skills, and teaching supplemental theory lessons on Indian dance history. <br> •	Dedicated 2-3 hours weekly for choreography development, curriculum design, and workshop planning. <br>• Drove a 1000+ follower increase across social media platforms, orchestrating a within one year on Facebook & YouTube.'
+        description: '•	Mentored students ages 10-13 in Indian classical Kathak dance, leading 2-hour weekly classes, establishing solid technique and performance skills, and teaching supplemental theory lessons on Indian dance history. <br> •	Dedicated 2-3 hours weekly for choreography development, curriculum design, and workshop planning. <br>• Drove a 1000+ follower increase across social media platforms within one year on Facebook & YouTube.'
       }
     ]
   },
