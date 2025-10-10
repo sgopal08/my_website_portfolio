@@ -189,3 +189,27 @@
   background-color: #a9a9a9;
   color:rgb(0, 0, 0);
 }
+
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.portfolio-tag {
+  background-color: #f0f0f0;
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 5px 12px;
+  white-space: nowrap;
+  transition: all 0.25s ease;
+}
+
+.portfolio-tag:hover {
+  background-color: #000;
+  color: #fff;
+}

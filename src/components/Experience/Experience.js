@@ -8,13 +8,13 @@ const experiences = [
     roles: [
       {
         role: 'Software Engineer Intern',
-        duration: 'Summer 2025',
+        duration: 'May 2025 - Present',
         description: '• Engineer new gameplay for a branded game using Next & Phaser frameworks for front end and Prisma for database storage to attract consumers at SAS conferences <br> • Collaborating with a 9-person Agile team in weekly sprints, scrums, & code reviews to deliver 7 new features and resolve 5 bugs <br> • Created internal dev scripts and led Jira sprint planning, to streamline pre-commit checks and improve developer efficiency'
       }
     ]
   },
   {
-    title: 'UNC Department of Computer Science',
+    title: 'UNC Chapel Hill Department of Computer Science',
     image: '/my_website_portfolio/images/unccs.png',
     roles: [
       {
@@ -105,58 +105,57 @@ const leadership = [
   },
 ]
 
+
+function ExperienceCard({ exp }) {
+  return (
+    <div className="experience-card" tabIndex={0}>
+      <div className="card-face card-front">
+        <div className="experience-logo" aria-hidden="true">
+          <img src={exp.image} alt="" width={96} height={96} loading="lazy" decoding="async" />
+        </div>
+        <h3 className="experience-company">{exp.title}</h3>
+        {exp.roles.slice(0, 1).map((role, idx) => (
+          <div key={idx} className="experience-role">
+            <p className="role-title">{role.role}</p>
+            <p className="role-duration">{role.duration}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="card-face card-back" aria-label={`${exp.title} details`}>
+        {exp.roles.map((role, idx) => (
+          <div key={idx} className="back-role">
+            <div className="back-role-header">
+              <span className="back-role-title">{role.role}</span>
+              <span className="back-role-duration">• {role.duration}</span>
+            </div>
+            <p
+              className="back-role-description"
+              dangerouslySetInnerHTML={{ __html: role.description }}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function Experience() {
   return (
     <div className="experience-container">
       <div className="experience-title">
-        <TypingAnimation text="Experiences"/>
+        <TypingAnimation text="Experiences" />
       </div>
-      <h2 className='skills-gallery-title'>Professional Experience</h2>
-      <div className="experience-stack">
-        {experiences.map((exp, index) => (
-          <div key={index} className="experience-card">
-            <div className="experience-logo">
-              <img src={exp.image} alt={exp.title} />
-            </div>
-            <div className="experience-content">
-              <h3 className="experience-company">{exp.title}</h3>
-              {exp.roles.map((role, idx) => (
-                <div key={idx} className="experience-role">
-                  <p className="role-title">{role.role}</p>
-                  <p className="role-duration">{role.duration}</p>
-                  <p
-                    className="role-description"
-                    dangerouslySetInnerHTML={{ __html: role.description }}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
+
+      <h2 className="skills-gallery-title">Professional Experience</h2>
+      <div className="experience-grid">
+        {experiences.map((exp, i) => <ExperienceCard key={i} exp={exp} />)}
       </div>
-      <div className ="leadership">
+
+      <div className="leadership">
         <h2 className="subtitle">Community & Leadership</h2>
-          <div className="experience-stack">
-          {leadership.map((exp, index) => (
-            <div key={index} className="experience-card">
-              <div className="experience-logo">
-                <img src={exp.image} alt={exp.title} />
-              </div>
-              <div className="experience-content">
-                <h3 className="experience-company">{exp.title}</h3>
-                {exp.roles.map((role, idx) => (
-                  <div key={idx} className="experience-role">
-                    <p className="role-title">{role.role}</p>
-                    <p className="role-duration">{role.duration}</p>
-                    <p
-                      className="role-description"
-                      dangerouslySetInnerHTML={{ __html: role.description }}
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
+        <div className="experience-grid">
+          {leadership.map((exp, i) => <ExperienceCard key={i} exp={exp} />)}
         </div>
       </div>
     </div>
