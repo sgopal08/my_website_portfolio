@@ -60,3 +60,21 @@
     font-weight: 500;
     color: #333;
 }
+
+.coursework-container {
+    margin-top: 56px;
+}
+
+.coursework-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.coursework-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+}

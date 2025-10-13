@@ -1,0 +1,91 @@
+.course-pill {
+    position: relative;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 18px 20px;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: default;
+    overflow: hidden;
+}
+
+.course-pill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22);
+}
+
+.course-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1.35;
+    padding: 2px 6px;
+}
+
+.ta-ribbon {
+    position: absolute;
+    top: 10px;
+    right: -35px;
+    background: #cfe9ff;
+    color: #78a3dc;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 8px 50px;
+    transform: rotate(50deg);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(11, 90, 166, 0.2);
+}
+
+.software-hover {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.96);
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    padding: 14px;
+}
+
+.course-pill:hover .software-hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.software-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #4b5563;
+    margin-bottom: 4px;
+}
+
+.software-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: center;
+}
+
+.software-tag {
+    font-size: 12px;
+    font-weight: 600;
+    color: #78a3dc;
+    background: #e6f2ff;
+    border: 1px solid #cfe9ff;
+    padding: 6px 10px;
+    border-radius: 9999px;
+    white-space: nowrap;
+}

@@ -10,7 +10,6 @@ function Navbar() {
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
-      // handle responsive behavior here if needed
     } 
   };
 
@@ -47,13 +46,13 @@ function Navbar() {
               </a>
             </li>
             <li className='nav-item'>
-              <a href="#skills" className='nav-links' onClick={closeMobileMenu}>
-                Skills
+              <a href="#portfolio" className='nav-links' onClick={closeMobileMenu}>
+                Projects
               </a>
             </li>
             <li className='nav-item'>
-              <a href="#portfolio" className='nav-links' onClick={closeMobileMenu}>
-                Projects
+              <a href="#skills" className='nav-links' onClick={closeMobileMenu}>
+                Skills
               </a>
             </li>
             <li className='nav-item'>
