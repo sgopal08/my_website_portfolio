@@ -4,41 +4,41 @@ import CourseworkPill from './CourseworkPill/CourseworkPill';
 
 const categorizedSkills = {
   Languages: [
-    { name: 'Python', image: '/my_website_portfolio/images/python.png' },
-    { name: 'Java', image: '/my_website_portfolio/images/java.png' },
-    { name: 'JavaScript', image: '/my_website_portfolio/images/javascript.png' },
-    { name: 'HTML', image: '/my_website_portfolio/images/html.jpg' },
-    { name: 'CSS', image: '/my_website_portfolio/images/css.svg' },
-    { name: 'TypeScript', image: '/my_website_portfolio/images/typescript.png' },
-    { name: 'Swift', image: '/my_website_portfolio/images/swift.png' },
-    { name: 'C', image: '/my_website_portfolio/images/clang.png' }
+    { name: 'Python', image: '/images/python.png' },
+    { name: 'Java', image: '/images/java.png' },
+    { name: 'JavaScript', image: '/images/javascript.png' },
+    { name: 'HTML', image: '/images/html.jpg' },
+    { name: 'CSS', image: '/images/css.svg' },
+    { name: 'TypeScript', image: '/images/typescript.png' },
+    { name: 'Swift', image: '/images/swift.png' },
+    { name: 'C', image: '/images/clang.png' }
   ],
   'Frameworks & Libraries': [
-    { name: 'React.js', image: '/my_website_portfolio/images/reactjs.png' },
-    { name: 'Angular', image: '/my_website_portfolio/images/angular.png' },
-    { name: 'Next.js', image: '/my_website_portfolio/images/nexticon.svg' },
-    { name: 'Tailwind CSS', image: '/my_website_portfolio/images/tailwind.png' },
-    { name: 'Phaser', image: '/my_website_portfolio/images/phaser.png' },
-    { name: 'FastAPI', image: '/my_website_portfolio/images/fastapi.png' },
-    { name: 'Pytest', image: '/my_website_portfolio/images/pytest.png' }
+    { name: 'React.js', image: '/images/reactjs.png' },
+    { name: 'Angular', image: '/images/angular.png' },
+    { name: 'Next.js', image: '/images/nexticon.svg' },
+    { name: 'Tailwind CSS', image: '/images/tailwind.png' },
+    { name: 'Phaser', image: '/images/phaser.png' },
+    { name: 'FastAPI', image: '/images/fastapi.png' },
+    { name: 'Pytest', image: '/images/pytest.png' }
 
   ],
   'Database & Cloud': [
-    { name: 'Supabase', image: '/my_website_portfolio/images/supabase.png' },
-    { name: 'Firebase', image: '/my_website_portfolio/images/firebase.png' },
-    { name: 'Vercel', image: '/my_website_portfolio/images/vercel.svg' },
-    { name: 'Prisma', image: '/my_website_portfolio/images/prisma.svg' },
-    { name: 'SQLAlchemy', image: '/my_website_portfolio/images/sql.png' },
+    { name: 'Supabase', image: '/images/supabase.png' },
+    { name: 'Firebase', image: '/images/firebase.png' },
+    { name: 'Vercel', image: '/images/vercel.svg' },
+    { name: 'Prisma', image: '/images/prisma.svg' },
+    { name: 'SQLAlchemy', image: '/images/sql.png' },
   ],
   'Developer Tools': [
-    { name: 'Git', image: '/my_website_portfolio/images/git.png' },
-    { name: 'GitHub', image: '/my_website_portfolio/images/github.svg' },
-    { name: 'Docker', image: '/my_website_portfolio/images/docker.png' },
-    { name: 'Jira', image: '/my_website_portfolio/images/jira.svg' },
-    { name: 'Figma', image: '/my_website_portfolio/images/figma.svg' },
-    { name: 'Linux', image: '/my_website_portfolio/images/linux.png' },
-    { name: 'CI/CD', image: '/my_website_portfolio/images/cicd.png' },
-    { name: 'Agile', image: '/my_website_portfolio/images/agile.png' },
+    { name: 'Git', image: '/images/git.png' },
+    { name: 'GitHub', image: '/images/github.svg' },
+    { name: 'Docker', image: '/images/docker.png' },
+    { name: 'Jira', image: '/images/jira.svg' },
+    { name: 'Figma', image: '/images/figma.svg' },
+    { name: 'Linux', image: '/images/linux.png' },
+    { name: 'CI/CD', image: '/images/cicd.png' },
+    { name: 'Agile', image: '/images/agile.png' },
   ],
 };
 

@@ -4,7 +4,7 @@ import TypingAnimation from '../TypingAnimation/TypingAnimation';
 const experiences = [
   {
     title: 'SAS Data & AI Solutions',
-    image: '/my_website_portfolio/images/sas.png',
+    image: '/images/sas.png',
     roles: [
       {
         role: 'Software Engineer Intern',
@@ -15,7 +15,7 @@ const experiences = [
   },
   {
     title: 'UNC Chapel Hill Department of Computer Science',
-    image: '/my_website_portfolio/images/unccs.png',
+    image: '/images/unccs.png',
     roles: [
       {
         role: 'Teaching Assistant',
@@ -26,7 +26,7 @@ const experiences = [
   },
   {
     title: 'Centible',
-    image: '/my_website_portfolio/images/centible.png',
+    image: '/images/centible.png',
     roles: [
       {
         role: 'Team Lead',
@@ -42,7 +42,7 @@ const experiences = [
   },
   {
     title: 'App Team Carolina',
-    image: '/my_website_portfolio/images/appteam.jpg',
+    image: '/images/appteam.jpg',
     roles: [
       {
         role: 'iOS Developer',
@@ -53,7 +53,7 @@ const experiences = [
   },
     {
     title: 'Develop for Good',
-    image: '/my_website_portfolio/images/dfg.png',
+    image: '/images/dfg.png',
     roles: [
       {
         role: 'Product Lead',
@@ -69,7 +69,7 @@ const experiences = [
   },
     {
     title: '1893 Brand Studio',
-    image: '/my_website_portfolio/images/dth.png',
+    image: '/images/dth.png',
     roles: [
       {
         role: 'Web Developer',
@@ -83,7 +83,7 @@ const experiences = [
 const leadership = [
     {
     title: 'HackNC',
-    image: '/my_website_portfolio/images/hacknc.jpeg',
+    image: '/images/hacknc.jpeg',
     roles: [
       {
         role: 'Marketing Director',
@@ -94,7 +94,7 @@ const leadership = [
   },
       {
     title: 'Shiva Dance Center',
-    image: '/my_website_portfolio/images/shiva.webp',
+    image: '/images/shiva.webp',
     roles: [
       {
         role: 'Assistant Dance Teacher',

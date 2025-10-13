@@ -10,10 +10,10 @@ function Welcome() {
       <TypingAnimation text="Welcome!" fontSize="70px"/>
       <h1 id="title">Hi, I'm Sanjana Gopalswamy</h1>
       <div className="profile-pic-container">
-        <img src="/my_website_portfolio/images/headshot.png" alt="Profile" className="profile-pic" />
+        <img src="/images/headshot.png" alt="Profile" className="profile-pic" />
       </div>
       <p id="desc">Third-year Computer Science & Advertising <br/>student at UNC-Chapel Hill</p>
-      <img src="/my_website_portfolio/images/unc_logo.png" alt="Profile" className="unc-logo"/>
+      <img src="/images/unc_logo.png" alt="Profile" className="unc-logo"/>
           <p className="profile-title">Connect with me!</p>
           <div className="icons">
             <a href="https://www.linkedin.com/in/sanjana-gopalswamy-029887296/" target="_blank" rel="noopener noreferrer" className="icon">
