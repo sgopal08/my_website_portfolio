@@ -11,7 +11,8 @@ const categorizedSkills = {
     { name: 'CSS', image: '/images/css.svg' },
     { name: 'TypeScript', image: '/images/typescript.png' },
     { name: 'Swift', image: '/images/swift.png' },
-    { name: 'C', image: '/images/clang.png' }
+    { name: 'C', image: '/images/clang.png' },
+    { name: 'SAS', image: '/images/sas_skills.png' },
   ],
   'Frameworks & Libraries': [
     { name: 'React.js', image: '/images/reactjs.png' },
@@ -77,14 +78,14 @@ function Skills() {
         ))}
       </div>
 
-      <div className="coursework-container">
+      {/* <div className="coursework-container">
         <h3 className="coursework-title">Coursework</h3>
         <div className="coursework-grid">
           {coursework.map((c, idx) => (
             <CourseworkPill key={idx} name={c.name} ta={c.ta} software={c.software} />
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

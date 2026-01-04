@@ -57,7 +57,7 @@ const tiles = [
   {
     image: '/images/logo.png',
     title: 'Personal Portfolio',
-    software: ['React', 'HTML', 'CSS', 'JavaScript'],
+    software: ['React', 'HTML', 'CSS', 'JavaScript', 'Framer Motion'],
     description: 'Personal Portfolio website platform where users can view my experiences, projects, and get in touch with me.',
     link: 'https://github.com/sgopal08/my_website_portfolio',
   },
