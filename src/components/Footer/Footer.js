@@ -3,8 +3,8 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <footer className='footer'>
-      <p>Made by Sanjana Gopalswamy 2025</p>
+    <footer className="footer">
+      <p>Made by Sanjana Gopalswamy 2026</p>
     </footer>
   );
 }

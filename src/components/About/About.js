@@ -5,20 +5,11 @@ import TypingAnimation from '../TypingAnimation/TypingAnimation';
 
 function About() {
   return (
-    <div className="welcome-container">
-      <TypingAnimation text="About Me"></TypingAnimation>
-      {/* <p className="profile-title">Connect with me!</p>
-          <div className="icons">
-             <a href="https://www.linkedin.com/in/sanjana-gopalswamy-029887296/" target="_blank" rel="noopener noreferrer" className="icon">
-              <i className="fab fa-linkedin" />
-            </a>
-            <a href="https://github.com/sgopal08" target="_blank" rel="noopener noreferrer" className="icon">
-              <i className="fab fa-github" />
-            </a>
-              <a href="mailto:sgopal0809@gmail.com"  className="icon">
-              <i className="fas fa-envelope" />
-            </a>
-          </div> */}
+    <section className="about-section">
+      <div className="about-heading">
+        <span className="section-eyebrow">01 / About</span>
+        <TypingAnimation text="A little more about me" />
+      </div>
       <div className="profile-blurb">
         <p>
           Hi, I’m Sanjana! I’m an undergraduate student at UNC Chapel Hill,
@@ -37,7 +28,13 @@ function About() {
           cuisines. Take a look at my work and experiences below!
         </p>
       </div>
-    </div>
+      <div className="about-notes" aria-label="Areas of interest">
+        <span>Software Engineering</span>
+        <span>Product Development</span>
+        <span>Technology &amp; Media</span>
+        <span>Teaching</span>
+      </div>
+    </section>
   );
 }
 

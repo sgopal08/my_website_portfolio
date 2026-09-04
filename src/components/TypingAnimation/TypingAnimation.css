@@ -1,7 +1,7 @@
 #typed-message {
-  overflow: hidden; 
-  white-space: nowrap; 
-  font-family: Avenir, sans-serif; 
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: inherit;
   margin-top: 40px;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .cursor {
-  border-right: 0.15em solid #78a3dc; 
+  border-right: 0.12em solid var(--accent);
   animation: blink 1s step-end infinite;
 }
 

@@ -1,11 +1,12 @@
 .footer {
-    background-color: #78a3dc;
-    /* Match the background color with your theme */
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 14px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 22px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: #0b1020;
+  color: rgba(222, 218, 242, 0.48);
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.04em;
 }

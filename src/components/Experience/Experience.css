@@ -1,197 +1,197 @@
 .experience-timeline-container {
-  background: #78a3dc;
-  padding: 56px 20px 90px;
+  padding: 105px 20px 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #0d1326;
 }
-
+.experience-title {
+  width: min(1080px, 92vw);
+  margin-bottom: 38px;
+}
+.experience-title .section-eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--accent-dark);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.experience-title #typed-message {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(42px, 5vw, 64px) !important;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
 .tl-wrap {
   position: relative;
-  width: min(1100px, 92vw);
-  margin: 10px auto 0;
+  width: min(1080px, 92vw);
 }
-
 .tl-line {
   position: absolute;
   left: 50%;
   top: 0;
   bottom: 0;
-  width: 4px;
+  width: 1px;
   transform: translateX(-50%);
-  background: rgba(255, 255, 255, .75);
-  border-radius: 999px;
+  background: rgba(216, 204, 255, 0.16);
 }
-
 .tl-row {
-  padding: 34px 0;
+  padding: 24px 0;
 }
-
 .tl-item {
   display: grid;
-  grid-template-columns: 1fr 120px 1fr; /* more space */
+  grid-template-columns: 1fr 92px 1fr;
   align-items: center;
+  outline: none;
 }
-
 .tl-mid {
   position: relative;
   display: grid;
   place-items: center;
 }
-
-/* Dot */
 .tl-dot {
   position: relative;
-  width: 66px;
-  height: 66px;
-  border-radius: 999px;
-  background: #fff;
+  z-index: 3;
+  width: 58px;
+  height: 58px;
   display: grid;
   place-items: center;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, .25);
-  border: 4px solid rgba(255, 255, 255, .9);
-  /* white ring */
-  z-index: 3;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #f8f7ff;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.26);
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease;
 }
-
 .tl-dot img {
-  width: 70%;
-  height: 70%;
+  width: 68%;
+  height: 68%;
   object-fit: contain;
+  border-radius: 8px;
 }
-
-/* Cards */
 .tl-card {
   position: relative;
-  width: min(520px, 92%);
-  background: #161532;
-  /* deep navy */
-  color: #fff;
-  border-radius: 10px;
-  padding: 22px 24px;
-  box-shadow: 0 16px 34px rgba(0, 0, 0, .28);
-  border: 1px solid rgba(255, 255, 255, .08);
   z-index: 3;
+  width: min(500px, 96%);
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #151c34;
+  color: var(--ink);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease;
 }
-
-/* small arrow notch like screenshot */
-.tl-item.left .tl-card::before,
-.tl-item.right .tl-card::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 10px solid transparent;
-}
-
-.tl-item.left .tl-card::before {
-  right: -20px;
-  border-left-color: #161532;
-}
-
-.tl-item.right .tl-card::before {
-  left: -20px;
-  border-right-color: #161532;
-}
-
 .tl-title {
-  margin: 0;
-  font-size: 34px;
-  font-weight: 900;
-  letter-spacing: -0.5px;
+  font-size: clamp(19px, 2vw, 23px);
+  line-height: 1.16;
+  letter-spacing: -0.03em;
 }
-
 .tl-company {
-  margin: 6px 0 16px;
-  opacity: .7;
-  font-size: 18px;
-  font-weight: 600;
+  margin: 7px 0 14px;
+  color: var(--accent-dark);
+  font-size: 16px;
+  font-weight: 750;
 }
-
 .tl-desc {
-  font-size: 18px;
-  line-height: 1.5;
-  opacity: .92;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.65;
 }
-
-/* Date labels near dot */
 .tl-date {
-  font-size: 22px;
-  font-weight: 800;
-  color: rgba(255, 255, 255, .75);
-  white-space: nowrap;
+  color: rgba(222, 218, 242, 0.58);
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 0.01em;
 }
-
 .tl-date-left {
   justify-self: end;
   margin-right: 18px;
+  text-align: right;
 }
-
 .tl-date-right {
   justify-self: start;
   margin-left: 18px;
 }
-
-/* Active scroll highlight */
-.tl-item.is-active .tl-card {
-  box-shadow: 0 22px 46px rgba(0, 0, 0, .35);
-  transform: translateY(-2px);
-  transition: transform 220ms ease, box-shadow 220ms ease;
+.tl-item.left .tl-left .tl-card {
+  justify-self: end;
 }
-
-/* Mobile: stack */
+.tl-item.right .tl-right .tl-card {
+  justify-self: start;
+}
+.tl-item.is-active .tl-card,
+.tl-item:focus .tl-card,
+.tl-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(196, 181, 253, 0.38);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.34);
+}
+.tl-item.is-active .tl-dot {
+  transform: scale(1.06);
+  border-color: #c4b5fd;
+}
+.tl-card,
+.tl-dot {
+  will-change: transform, opacity, filter;
+}
 @media (max-width: 860px) {
   .tl-line {
     left: 28px;
     transform: none;
   }
-
   .tl-item {
-    grid-template-columns: 70px 1fr;
-    gap: 14px;
+    grid-template-columns: 72px 1fr;
+    gap: 4px;
   }
-
   .tl-mid {
     grid-column: 1;
+    grid-row: 1;
     justify-self: start;
   }
-
   .tl-col {
     grid-column: 2;
   }
-
+  .tl-left,
+  .tl-right {
+    grid-row: 1;
+  }
   .tl-date {
     display: none;
   }
-
-  optional
-  .tl-item.left .tl-dot::after,
-  .tl-item.right .tl-dot::after {
-    display: none;
-  }
-
   .tl-card {
     width: 100%;
   }
-
-  .tl-item.left .tl-card::before,
-  .tl-item.right .tl-card::before {
-    display: none;
+  .tl-dot {
+    width: 56px;
+    height: 56px;
   }
 }
-
-.tl-card,
-.tl-dot {
-  will-change: transform, opacity, filter;
-}
-
-/* Make cards align toward the center line equally */
-.tl-item.left .tl-left .tl-card {
-  justify-self: end;
-  /* push card to the right edge of left column (toward dot) */
-}
-
-.tl-item.right .tl-right .tl-card {
-  justify-self: start;
-  /* push card to the left edge of right column (toward dot) */
+@media (max-width: 520px) {
+  .experience-timeline-container {
+    padding-inline: 12px;
+  }
+  .tl-wrap,
+  .experience-title {
+    width: calc(100% - 16px);
+  }
+  .tl-item {
+    grid-template-columns: 58px 1fr;
+  }
+  .tl-line {
+    left: 23px;
+  }
+  .tl-dot {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+  }
+  .tl-card {
+    padding: 19px;
+  }
 }

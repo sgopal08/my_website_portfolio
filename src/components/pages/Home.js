@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import Welcome from '../Welcome';
+import About from '../About/About';
 import Experience from '../Experience';
 import Skills from '../Skills';
 import Portfolio from '../Portfolio';

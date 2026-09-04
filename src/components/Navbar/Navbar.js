@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import './Navbar.css';
 
 function Navbar() {
@@ -8,62 +7,72 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-    } 
-  };
-
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  window.addEventListener('resize', showButton);
-
   return (
-    <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <Link to='/my_website_portfolio/' className='navbar-logo' onClick={closeMobileMenu}>
-          <img src='/images/logo.png' alt='logo' className='navbar-logo-img' />
-          </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <a href="#home" className='nav-links' onClick={closeMobileMenu}>
-                Home
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a href="#about" className='nav-links' onClick={closeMobileMenu}>
-                About
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a href="#experience" className='nav-links' onClick={closeMobileMenu}>
-                Experience
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a href="#portfolio" className='nav-links' onClick={closeMobileMenu}>
-                Projects
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a href="#skills" className='nav-links' onClick={closeMobileMenu}>
-                Skills
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a href="#contact" className='nav-links' onClick={closeMobileMenu}>
-                Contact
-              </a>
-            </li>   
-          </ul>
-        </div>
-      </nav>
-    </>
+    <nav className="navbar">
+      <div className="navbar-container">
+        <a
+          href="#home"
+          className="navbar-logo"
+          onClick={closeMobileMenu}
+          aria-label="Go to home"
+        >
+          <span className="logo-mark">SG</span>
+          <span className="logo-name">Sanjana Gopalswamy</span>
+        </a>
+        <button
+          className="menu-icon"
+          onClick={handleClick}
+          aria-label="Toggle navigation"
+          aria-expanded={click}
+        >
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        </button>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li className="nav-item">
+            <a href="#home" className="nav-links" onClick={closeMobileMenu}>
+              Home
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#about" className="nav-links" onClick={closeMobileMenu}>
+              About
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              href="#experience"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Experience
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              href="#portfolio"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Projects
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#skills" className="nav-links" onClick={closeMobileMenu}>
+              Skills
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              href="#contact"
+              className="nav-links nav-contact"
+              onClick={closeMobileMenu}
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 }
 

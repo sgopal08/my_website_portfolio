@@ -14,24 +14,26 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div id="home">
-        <Welcome/>
-      </div>
-      <div id="about">
-        <About />
-      </div>
-      <div id="experience">
-        <Experience />
-      </div>
-      <div id="portfolio">
-        <Portfolio />
-      </div>
-      <div id="skills">
-        <Skills />
-      </div>
-      <div id="contact">
-        <Contact />
-      </div>
+      <main>
+        <div id="home">
+          <Welcome />
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div id="experience">
+          <Experience />
+        </div>
+        <div id="portfolio">
+          <Portfolio />
+        </div>
+        <div id="skills">
+          <Skills />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
+      </main>
       <Footer />
     </Router>
   );
