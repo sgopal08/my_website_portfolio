@@ -5,6 +5,30 @@ import { motion } from "framer-motion";
 
 
 const experiences = [
+      {
+    title: "UNC Department of Computer Science",
+    image: "/images/unccs.png",
+    roles: [
+      {
+        role: "Undergraduate Research Assistant",
+        duration: "August 2026 - Present",
+        description:
+          "Spatial & Physical Intelligence (SPIN) Lab under Dr. Roni Sengupta",
+      },
+    ],
+  },
+    {
+    title: "Adobe",
+    image: "/images/adobe.png",
+    roles: [
+      {
+        role: "Software Engineer Intern",
+        duration: "Summer 2026",
+        description:
+          "Lightroom - Built internal developer tools, UI infrastructure, and automated testing workflows for Adobe Lightroom, supporting design system modernization and improving the reliability of the desktop experience.",
+      },
+    ],
+  },
   {
     title: "SAS Institute",
     image: "/images/sas.png",

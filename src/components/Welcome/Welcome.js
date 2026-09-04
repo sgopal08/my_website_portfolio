@@ -12,7 +12,7 @@ function Welcome() {
       <div className="profile-pic-container">
         <img src="/images/headshot.png" alt="Profile" className="profile-pic" />
       </div>
-      <p id="desc">Third-year Computer Science & Advertising <br/>student at UNC-Chapel Hill</p>
+      <p id="desc">Undergraduate Computer Science & Advertising <br/>student at UNC-Chapel Hill</p>
       <img src="/images/unc_logo.png" alt="Profile" className="unc-logo"/>
           <p className="profile-title">Connect with me!</p>
           <div className="icons">
