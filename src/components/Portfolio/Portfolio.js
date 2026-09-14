@@ -108,45 +108,57 @@ function Portfolio() {
         <p>A collection of products, experiments, and collaborative work.</p>
       </div>
       <div className="portfolio-tiles">
-        {tiles.map((tile, index) => (
-          <article className="portfolio-card" key={index}>
-            <div className="portfolio-image">
-              <img src={tile.image} alt={tile.title} />
-            </div>
-            <div className="portfolio-details">
-              <h3 className="portfolio-title">{tile.title}</h3>
-              <p className="portfolio-description">{tile.description}</p>
-              <div className="portfolio-tags">
-                {(Array.isArray(tile.software)
-                  ? tile.software
-                  : tile.software.split(',')
-                ).map((tech, i) => (
-                  <span key={i} className="portfolio-tag">
-                    {tech.trim()}
-                  </span>
-                ))}
+        {tiles.map((tile, index) => {
+          const slug = tile.title
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/(^-|-$)/g, '');
+          return (
+            <article className="portfolio-card" key={index}>
+              <div className="portfolio-image">
+                <img src={tile.image} alt={tile.title} />
               </div>
-              <div className="portfolio-buttons">
-                <a href={tile.link} target="_blank" rel="noopener noreferrer">
-                  <span className="project-button">
-                    Try it out <span aria-hidden="true">↗</span>
-                  </span>
-                </a>
-                {tile.presentationLink && (
+              <div className="portfolio-details">
+                <h3 className="portfolio-title">{tile.title}</h3>
+                <p className="portfolio-description">{tile.description}</p>
+                <div className="portfolio-tags">
+                  {(Array.isArray(tile.software)
+                    ? tile.software
+                    : tile.software.split(',')
+                  ).map((tech, i) => (
+                    <span key={i} className="portfolio-tag">
+                      {tech.trim()}
+                    </span>
+                  ))}
+                </div>
+                <div className="portfolio-buttons">
                   <a
-                    href={tile.presentationLink}
+                    href={tile.link}
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-goatcounter-click={`project-open-${slug}`}
                   >
-                    <span className="presentation-button">
-                      View presentation <span aria-hidden="true">↗</span>
+                    <span className="project-button">
+                      Try it out <span aria-hidden="true">↗</span>
                     </span>
                   </a>
-                )}
+                  {tile.presentationLink && (
+                    <a
+                      href={tile.presentationLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-goatcounter-click={`project-presentation-${slug}`}
+                    >
+                      <span className="presentation-button">
+                        View presentation <span aria-hidden="true">↗</span>
+                      </span>
+                    </a>
+                  )}
+                </div>
               </div>
-            </div>
-          </article>
-        ))}
+            </article>
+          );
+        })}
       </div>
 
       {/* Old Image Carousel for Graphics */}

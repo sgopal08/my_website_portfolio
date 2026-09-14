@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Contact.css';
 import TypingAnimation from '../TypingAnimation/TypingAnimation';
+import { trackEvent } from '../../utils/analytics';
 
 function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -20,6 +21,7 @@ function Contact() {
       .then((response) => {
         if (response.ok) {
           setIsSubmitted(true);
+          trackEvent('contact-form-success');
         } else {
           alert('Oops! Something went wrong. Please try again.');
         }
@@ -41,6 +43,7 @@ function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             className="icon"
+            data-goatcounter-click="contact-linkedin"
           >
             <i className="fab fa-linkedin" />
           </a>
@@ -49,10 +52,15 @@ function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             className="icon"
+            data-goatcounter-click="contact-github"
           >
             <i className="fab fa-github" />
           </a>
-          <a href="mailto:sgopal0809@gmail.com" className="icon">
+          <a
+            href="mailto:sgopal0809@gmail.com"
+            className="icon"
+            data-goatcounter-click="contact-email"
+          >
             <i className="fas fa-envelope" />
           </a>
         </div>
@@ -84,7 +92,7 @@ function Contact() {
               required
             />
           </label>
-          <button type="submit">
+          <button type="submit" data-goatcounter-click="contact-form-submit-click">
             Send message <span aria-hidden="true">↗</span>
           </button>
         </form>
